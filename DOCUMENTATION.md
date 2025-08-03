@@ -1,5 +1,7 @@
 # 📚 Documentación Técnica – Chispart CLI
-
+<p align="center">
+  <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300">
+</p>
 Este documento describe el funcionamiento interno de **Chispart CLI**, la configuración necesaria y cómo interactúa con **Gemini API** y **ProjectAura (GPT)**.
 
 ---
