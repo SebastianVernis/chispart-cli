@@ -1,6 +1,5 @@
 <body>
   <body class: background-image; img-src="/assets/bg.png" alt="Chispart CLI Background" position-full>
-</body>
 
 # 🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT  
 
@@ -101,3 +100,5 @@ así como ejemplos avanzados de integración.
 
 💻 **Convierte tu terminal en una experiencia conversacional con IA híbrida.**  
 ⭐ ¡Instala Chispart CLI y lleva tu productividad a otro nivel! ⭐
+
+</body>
