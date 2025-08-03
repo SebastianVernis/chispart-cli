@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/status-active-success.svg" alt="Status">
   <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions Welcome">
 </p>
----
 
 ## 🧠 ¿Cómo Funciona?
 
