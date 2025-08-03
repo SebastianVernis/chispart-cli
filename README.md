@@ -14,9 +14,9 @@
 
 <br>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/SebastianVernis/chispart-cli/main/assets/demo.gif" alt="Demo Chispart CLI" width="800">
-</div>
+###<div align="center">
+ ### <img src="https://raw.githubusercontent.com/SebastianVernis/chispart-cli/main/assets/demo.gif" alt="Demo Chispart CLI" width="800">##
+</div>##
 
 ---
 
