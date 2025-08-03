@@ -32,19 +32,38 @@ Usuario → Chispart CLI → Gemini API → Scripts / Lógica
 
 ## 🔐 Configuración de Claves API
 
-Para habilitar la comunicación con GPT a través de ProjectAura:
+Chispart CLI ahora soporta múltiples proveedores de LLM a través de ProjectAura. La configuración se realiza mediante variables de entorno:
 
-1. Obtén una clave de API de OpenAI u otro proveedor GPT.  
-2. Configura una variable de entorno:  
+### Variables de Entorno Requeridas
+
+- **`PROJECTAURA_API_KEY`** (Requerida): Clave de API del proveedor LLM
+- **`PROJECTAURA_ENDPOINT`** (Opcional): Endpoint de la API (por defecto: OpenAI)
+- **`PROJECTAURA_MODEL`** (Opcional): Modelo a utilizar (por defecto: "gpt-4o-mini")
+
+### Configuración para OpenAI (GPT)
 
 ```bash
-export PROJECTAURA_API_KEY="tu_clave_aqui"
+export PROJECTAURA_API_KEY="sk-tu_clave_openai_aqui"
+export PROJECTAURA_ENDPOINT="https://api.openai.com/v1/chat/completions"
+export PROJECTAURA_MODEL="gpt-4o-mini"  # o gpt-4, gpt-3.5-turbo, etc.
 ```
 
-3. (Opcional) Define el endpoint del modelo:  
+### Configuración para Mistral AI
 
 ```bash
-export PROJECTAURA_ENDPOINT="https://api.openai.com/v1/chat/completions"
+export PROJECTAURA_API_KEY="tu_clave_mistral_aqui"
+export PROJECTAURA_ENDPOINT="https://api.mistral.ai/v1/chat/completions"
+export PROJECTAURA_MODEL="mistral-tiny"  # o mistral-small, mixtral-8x7b-instruct, etc.
+```
+
+### Configuración para Otros Proveedores
+
+Cualquier proveedor compatible con la API de OpenAI puede ser utilizado:
+
+```bash
+export PROJECTAURA_API_KEY="tu_clave_api"
+export PROJECTAURA_ENDPOINT="https://tu-proveedor.com/v1/chat/completions"
+export PROJECTAURA_MODEL="modelo_especifico"
 ```
 
 ---
@@ -63,34 +82,70 @@ export PROJECTAURA_ENDPOINT="https://api.openai.com/v1/chat/completions"
 
 ## 🛠️ Ejemplos de Uso Avanzado
 
-### ✅ Ejemplo 1: Consulta directa a GPT vía ProjectAura
+### ✅ Ejemplo 1: Consulta directa a LLM vía ProjectAura
 ```bash
 chispart consulta projectaura sobre optimización de rendimiento en React
+chispart pregunta a aura sobre patrones de diseño
+chispart consulta aura sobre mejores prácticas de seguridad
 ```
 
-### ✅ Ejemplo 2: Automatización con IA
+### ✅ Ejemplo 2: Cambio dinámico de proveedor LLM
 ```bash
-chispart genera script de backup optimizado
+# Usar OpenAI para análisis de código
+export PROJECTAURA_MODEL="gpt-4"
+chispart consulta projectaura sobre refactorización de este código
+
+# Cambiar a Mistral para consultas generales
+export PROJECTAURA_MODEL="mistral-small"
+chispart pregunta a aura sobre arquitectura de software
 ```
 
-Gemini interpreta el comando, genera contexto y ProjectAura (GPT) sugiere el script adecuado.
+### ✅ Ejemplo 3: Manejo de errores mejorado
+```bash
+# Si hay un error en la ejecución, ahora obtienes información detallada:
+chispart prepara el entorno
+# ❌ Error al ejecutar el script 'implement.sh':
+#    Stderr: npm: command not found
+#    Stdout (parcial): Iniciando configuración del entorno...
+```
 
 ---
 
 ## 🧩 Casos de Integración
 
-- **Desarrollo:** asistencia con código, refactorización y generación de scripts.  
-- **DevOps:** despliegues automatizados con recomendaciones inteligentes.  
-- **Data Analysis:** análisis avanzado de logs, métricas y sugerencias.
+- **Desarrollo:** Asistencia con código, refactorización y generación de scripts usando diferentes LLMs según la necesidad.
+- **DevOps:** Despliegues automatizados con recomendaciones inteligentes de múltiples proveedores.
+- **Data Analysis:** Análisis avanzado de logs, métricas y sugerencias con flexibilidad de modelo.
+- **Consultoría:** Cambio dinámico entre modelos especializados (GPT para código, Mistral para análisis general).
+
+---
+
+## 🔧 Mejoras Técnicas Implementadas
+
+### Robustez del Sistema
+- **Rutas absolutas:** Eliminación de problemas de rutas relativas
+- **Manejo de errores mejorado:** Información detallada de stderr y stdout
+- **Validación de respuestas:** Verificación de estructura de respuesta de APIs
+
+### Flexibilidad Multi-LLM
+- **Configuración dinámica:** Cambio de proveedor sin modificar código
+- **Compatibilidad amplia:** Soporte para cualquier API compatible con OpenAI
+- **Fallback inteligente:** Valores por defecto para configuración mínima
+
+### Escalabilidad
+- **Arquitectura modular:** Fácil adición de nuevos proveedores
+- **Variables de entorno:** Configuración externa sin hardcoding
+- **Logging mejorado:** Información de debugging para troubleshooting
 
 ---
 
 ## 📌 Notas Finales
 
-- Chispart CLI usa Gemini API como cerebro principal y GPT como cerebro auxiliar.  
-- Puedes cambiar el modelo de ProjectAura (por ejemplo, GPT-4, local LLM, etc.) sin alterar el flujo de Chispart.  
-- Diseño modular: es fácil agregar nuevas intenciones y scripts.
+- **Flexibilidad Multi-LLM:** Chispart CLI ahora soporta OpenAI, Mistral y cualquier proveedor compatible.
+- **Configuración simple:** Cambio de proveedor mediante variables de entorno.
+- **Robustez mejorada:** Manejo de errores detallado y rutas absolutas.
+- **Diseño modular:** Fácil extensión para nuevos proveedores y funcionalidades.
 
 ---
 
-🚀 **Con Chispart CLI obtienes una terminal con inteligencia híbrida (Gemini + GPT).**
+🚀 **Con Chispart CLI obtienes una terminal con inteligencia híbrida y flexibilidad multi-LLM.**

@@ -62,24 +62,55 @@ cd chispart-cli
 ./install.sh
 ```
 
-> ⚠️ Asegúrate de tener Node.js >=18 y tu clave de API de Gemini configurada en `.env`
+> ⚠️ Asegúrate de tener Node.js >=18 y las claves de API configuradas
 
-```
-.env
+### 🔐 Configuración de Variables de Entorno
 
-GEMINI_API_KEY="TU_API_GEMINI"
+Para usar ProjectAura con diferentes proveedores de LLM:
+
+```bash
+# Para OpenAI (GPT)
+export PROJECTAURA_API_KEY="tu_openai_api_key"
+export PROJECTAURA_ENDPOINT="https://api.openai.com/v1/chat/completions"
+export PROJECTAURA_MODEL="gpt-4o-mini"
+
+# Para Mistral AI
+export PROJECTAURA_API_KEY="tu_mistral_api_key"
+export PROJECTAURA_ENDPOINT="https://api.mistral.ai/v1/chat/completions"
+export PROJECTAURA_MODEL="mistral-tiny"
 ```
+
+> 💡 **Flexibilidad Multi-LLM**: Chispart CLI ahora soporta múltiples proveedores de LLM cambiando simplemente las variables de entorno.
 
 ---
 
 ## 🚀 Ejemplos de Uso
 
 ```bash
+# Comandos básicos
 chispart prepara el entorno de desarrollo
 chispart despliega la app en producción
-chispart explica este error: "TypeError: Cannot read property"
-chispart genera un script para respaldar la base de datos
+chispart analiza logs del sistema
+chispart prueba la aplicación
+
+# Consultas avanzadas con ProjectAura
 chispart consulta projectaura sobre mejores prácticas en React
+chispart pregunta a aura sobre optimización de rendimiento
+chispart consulta aura sobre patrones de diseño en JavaScript
+```
+
+### 🔄 Cambio de Proveedor LLM en Tiempo Real
+
+```bash
+# Cambiar a OpenAI
+export PROJECTAURA_API_KEY="tu_openai_key"
+export PROJECTAURA_MODEL="gpt-4o-mini"
+chispart consulta projectaura sobre arquitectura de microservicios
+
+# Cambiar a Mistral
+export PROJECTAURA_API_KEY="tu_mistral_key"
+export PROJECTAURA_MODEL="mistral-small"
+chispart pregunta a aura sobre optimización de código
 ```
 
 ---

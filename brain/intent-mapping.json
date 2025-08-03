@@ -13,7 +13,7 @@
   },
   {
     "intent": "Depuración",
-    "keywords": ["debug", "analiza error", "corrige"],
+    "keywords": ["debug", "analiza error", "corrige", "analiza logs"],
     "action": "Depuración y análisis de logs",
     "script": "debug.sh"
   },
@@ -22,6 +22,12 @@
     "keywords": ["despliega", "sube", "deploy"],
     "action": "Despliegue del proyecto",
     "script": "deploy.sh"
+  },
+  {
+    "intent": "Consulta ProjectAura",
+    "keywords": ["consulta projectaura", "pregunta a projectaura", "projectaura", "consulta aura", "pregunta a aura"],
+    "action": "Consultar con ProjectAura (LLM)",
+    "script": "ask-project-aura.sh"
   },
   {
     "intent": "Consulta Jules",

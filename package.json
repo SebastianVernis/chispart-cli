@@ -1,0 +1,28 @@
+{
+  "name": "chispart-cli",
+  "version": "1.0.0",
+  "description": "CLI conversacional con IA híbrida (Gemini + LLM flexible)",
+  "main": "chispart.js",
+  "type": "module",
+  "scripts": {
+    "start": "node chispart.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "gemini",
+    "gpt",
+    "mistral",
+    "llm",
+    "conversational"
+  ],
+  "author": "Sebastian Vernis",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
