@@ -45,10 +45,10 @@ Usuario → Chispart CLI → Gemini (detección de intención)
 
 ```
 chispart.js         → Núcleo del CLI
-projectaura.js      → Puente a GPT
+project-aura.js      → Puente a GPT
 brain/intent-mapping.json → Mapeo de intenciones
 actions/*.sh        → Scripts automatizados
-ask-projectaura.sh  → Delega a GPT
+ask-project-aura.sh  → Delega a GPT
 install.sh          → Instalador con alias
 ```
 
@@ -62,7 +62,13 @@ cd chispart-cli
 ./install.sh
 ```
 
-> ⚠️ Asegúrate de tener Node.js >=18 y tu clave de API de Gemini configurada en `.env`.
+> ⚠️ Asegúrate de tener Node.js >=18 y tu clave de API de Gemini configurada en `.env`
+
+```
+.env
+
+GEMINI_API_KEY="TU_API_GEMINI"
+```
 
 ---
 
