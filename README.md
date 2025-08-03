@@ -1,4 +1,3 @@
-```html
 <div style="background-image: url('/assets/bg.png'); background-size: cover; background-repeat: no-repeat; padding: 40px 20px; border-radius: 12px; color: #ffffff; background-color: #0d1117;">
   <h1 align="center">
     <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300"><br>
@@ -99,4 +98,3 @@ así como ejemplos avanzados de integración.
   💻 <em>Convierte tu terminal en una experiencia conversacional con IA híbrida.</em><br>
   ⭐ ¡Instala Chispart CLI y lleva tu productividad a otro nivel! ⭐
 </div>
-```
