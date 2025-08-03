@@ -15,10 +15,9 @@ Usuario → Chispart CLI → Gemini API → Scripts / Lógica
                                    ↳ (cuando es necesario) → ProjectAura → Modelo GPT → Respuesta enriquecida
 ```
 
-- **Gemini API**: Procesa lenguaje natural y clasifica intenciones.  
-- **ProjectAura**: Conector que interactúa con modelos GPT para razonamiento avanzado.  
-- **Chispart CLI**: Orquestador que entrega la respuesta final al usuario.
-
+🟣 **Gemini API** → analiza y clasifica intenciones  
+🔵 **ProjectAura (GPT)** → resuelve tareas complejas  
+🟢 **Chispart CLI** → orquesta y entrega resultados  
 ---
 
 ## ⚙️ Componentes Principales
