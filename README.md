@@ -1,4 +1,4 @@
-<div style="background-image: src('assets/bg.png'); background-size: cover; background-repeat: no-repeat; padding: 40px 20px; border-radius: 12px; color: #ffffff; background-color: #0d1117;">
+<div style="background-image: background-size: cover; background-repeat: no-repeat; padding: 40px 20px; border-radius: 12px; color: #ffffff; background-color: #0d1117;">
   <h1 align="center">
     <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300"><br>
     🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT
