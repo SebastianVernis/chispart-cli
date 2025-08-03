@@ -1,22 +1,20 @@
-<div style= "background-image: url"/assets/bg.png"; alt: "Chispart CLI Background"; background-size: cover; background-repeat: no-repeat;"
+```html
+<div style="background-image: url('/assets/bg.png'); background-size: cover; background-repeat: no-repeat; padding: 40px 20px; border-radius: 12px; color: #ffffff; background-color: #0d1117;">
+  <h1 align="center">
+    <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300"><br>
+    🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT
+  </h1>
 
-# 🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT  
+  <p align="center">
+    <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Versión">
+    <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg" alt="Node.js">
+    <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="Licencia">
+    <img src="https://img.shields.io/badge/status-active-success.svg" alt="Estado">
+    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contribuciones bienvenidas">
+  </p>
+</div>
 
-<p align="center">
-  <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300">
-</p>
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg)
-![License](https://img.shields.io/badge/license-MIT-yellow.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
-![Contributions](https://img.shields.io/badge/contributions-welcome-orange.svg)
-
-**Chispart CLI** es un módulo de línea de comandos que permite interactuar con tu sistema usando **lenguaje natural**,  
-interpretando tus intenciones a través de la **API de Gemini** y resolviendo tareas complejas con ayuda de **ProjectAura**,  
-un conector que comunica a Gemini con **modelos GPT** para ofrecer respuestas y acciones inteligentes.  
-
----
+<br>
 
 ## 🧠 ¿Cómo Funciona?
 
@@ -38,7 +36,7 @@ Usuario → Chispart CLI → API de Gemini → (Procesa intención)
 - 🗣️ **Interacción en lenguaje natural** sin necesidad de recordar comandos.  
 - 🤝 **Integración nativa con la API de Gemini** para detección precisa de intenciones.  
 - 🤖 **Razonamiento avanzado con GPT** gracias al conector **ProjectAura**.  
-- ⚡ **Automatización modular** mediante scripts definidos en `actions/`.  
+- ⚡ **Automatización modular** mediante scripts definidos en `actions/`.
 
 ---
 
@@ -56,7 +54,7 @@ Usuario → Chispart CLI → API de Gemini → (Procesa intención)
 ## ⚡ Instalación Rápida
 
 ```bash
-git clone https://github.com/SebastianVernis/chispart-cli.git
+git clone https://github.com/SebastianVernis/chispart-cli.git 
 cd chispart-cli
 ./install.sh
 ```
@@ -97,7 +95,8 @@ así como ejemplos avanzados de integración.
 
 ---
 
-💻 **Convierte tu terminal en una experiencia conversacional con IA híbrida.**  
-⭐ ¡Instala Chispart CLI y lleva tu productividad a otro nivel! ⭐
-
+<div align="center">
+  💻 <em>Convierte tu terminal en una experiencia conversacional con IA híbrida.</em><br>
+  ⭐ ¡Instala Chispart CLI y lleva tu productividad a otro nivel! ⭐
 </div>
+```
