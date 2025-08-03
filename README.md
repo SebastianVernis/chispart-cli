@@ -1,5 +1,4 @@
-<body>
-  <body class: background-image; img-src="/assets/bg.png" alt="Chispart CLI Background" position-full>
+<body style= "background-image: url"/assets/bg.png"; alt: "Chispart CLI Background"; background-size: cover; background-repeat: no-repeat;">
 
 # 🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT  
 
