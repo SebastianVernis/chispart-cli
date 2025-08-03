@@ -1,0 +1,32 @@
+[
+  {
+    "intent": "Preparar entorno",
+    "keywords": ["prepara", "instala dependencias", "configura entorno"],
+    "action": "Inicialización de entorno",
+    "script": "implement.sh"
+  },
+  {
+    "intent": "Ejecutar pruebas",
+    "keywords": ["prueba", "test", "valida", "corre pruebas"],
+    "action": "Ejecución de pruebas",
+    "script": "test.sh"
+  },
+  {
+    "intent": "Depuración",
+    "keywords": ["debug", "analiza error", "corrige"],
+    "action": "Depuración y análisis de logs",
+    "script": "debug.sh"
+  },
+  {
+    "intent": "Despliegue",
+    "keywords": ["despliega", "sube", "deploy"],
+    "action": "Despliegue del proyecto",
+    "script": "deploy.sh"
+  },
+  {
+    "intent": "Consulta Jules",
+    "keywords": ["pregunta a jules", "consulta jules", "pide consejo a jules"],
+    "action": "Conectar con ChatGPT (Jules)",
+    "script": "ask-jules.sh"
+  }
+]
