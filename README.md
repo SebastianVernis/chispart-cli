@@ -1,7 +1,9 @@
 # 🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT  
+
 <p align="center">
-  <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300">
+  <img src="./assets/logo1.png" alt="Chispart CLI Logo" width="300">
 </p>
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
