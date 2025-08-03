@@ -1,100 +1,118 @@
-<div style="background-image: background-size: cover; background-repeat: no-repeat; padding: 40px 20px; border-radius: 12px; color: #ffffff; background-color: #0d1117;">
-  <h1 align="center">
-    <img src="./assets/logo.png" alt="Chispart CLI Logo" width="300"><br>
-    🚀 Chispart CLI – Interfaz Conversacional Potenciada por Gemini y GPT
-  </h1>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SebastianVernis/chispart-cli/main/assets/logo.png" alt="Chispart CLI Logo" width="300">
+</p>
 
-  <p align="center">
-    <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Versión">
-    <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg" alt="Node.js">
-    <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="Licencia">
-    <img src="https://img.shields.io/badge/status-active-success.svg" alt="Estado">
-    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contribuciones bienvenidas">
-  </p>
-</div>
+<h1 align="center">🚀 Chispart CLI – Interfaz Conversacional con IA Híbrida (Gemini + GPT)</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg" alt="Node.js">
+  <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="License">
+  <img src="https://img.shields.io/badge/status-active-success.svg" alt="Status">
+  <img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions Welcome">
+</p>
 
 <br>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/SebastianVernis/chispart-cli/main/assets/demo.gif" alt="Demo Chispart CLI" width="800">
+</div>
+
+---
+
 ## 🧠 ¿Cómo Funciona?
 
+Chispart CLI convierte tu terminal en un asistente conversacional inteligente:
+
 ```
-Usuario → Chispart CLI → API de Gemini → (Procesa intención) 
-                                     ↳ Si requiere razonamiento avanzado → ProjectAura → Modelo GPT → Respuesta al usuario
+Usuario → Chispart CLI → Gemini (detección de intención)
+                             ↓
+                    ¿Tarea compleja? → Sí → ProjectAura → GPT → Respuesta
+                             ↓
+                    No → Ejecuta script local → Respuesta
 ```
 
-1. **Chispart CLI** captura el comando en lenguaje natural.  
-2. **Gemini API** analiza y clasifica la intención.  
-3. Si la tarea es simple, ejecuta el script correspondiente (`actions/*.sh`).  
-4. Si es compleja, **delegará a ProjectAura**, que se comunica con un modelo **GPT** para generar una respuesta avanzada.  
-5. El resultado se muestra directamente en la terminal.
+1. Escribe un comando en **lenguaje natural**.
+2. **Gemini API** entiende tu intención.
+3. Si es simple → ejecuta un script en `actions/`.
+4. Si es complejo → lo envía a **ProjectAura**, que consulta un modelo **GPT**.
+5. Obtiene una respuesta avanzada y te la muestra en la terminal.
 
 ---
 
-## ✅ Características Clave
+## ✅ Características
 
-- 🗣️ **Interacción en lenguaje natural** sin necesidad de recordar comandos.  
-- 🤝 **Integración nativa con la API de Gemini** para detección precisa de intenciones.  
-- 🤖 **Razonamiento avanzado con GPT** gracias al conector **ProjectAura**.  
-- ⚡ **Automatización modular** mediante scripts definidos en `actions/`.
+- 🗣️ Habla con tu terminal como si fuera un asistente.
+- 🤖 Usa **Gemini** para entender comandos y **GPT** para razonamiento avanzado.
+- ⚙️ Automatiza tareas con scripts modulares en `actions/`.
+- 🔌 Arquitectura híbrida: velocidad + inteligencia.
 
 ---
 
-## 🛠️ Arquitectura del Proyecto
+## 🛠️ Arquitectura
 
-- **`chispart.js`** – El núcleo que envía entradas a Gemini y coordina respuestas/acciones.  
-- **`projectaura.js`** – Conector que comunica a Gemini con GPT para análisis avanzado.  
-- **`brain/intent-mapping.json`** – Define palabras clave, intenciones y scripts asociados.  
-- **`actions/`** – Carpeta de scripts `.sh` que realizan tareas automatizadas.  
-- **`ask-projectaura.sh`** – Script puente para delegar consultas complejas a GPT.  
-- **`install.sh`** – Instalador que configura el entorno y alias `chispart`.
+```
+chispart.js         → Núcleo del CLI
+projectaura.js      → Puente a GPT
+brain/intent-mapping.json → Mapeo de intenciones
+actions/*.sh        → Scripts automatizados
+ask-projectaura.sh  → Delega a GPT
+install.sh          → Instalador con alias
+```
 
 ---
 
 ## ⚡ Instalación Rápida
 
 ```bash
-git clone https://github.com/SebastianVernis/chispart-cli.git 
+git clone https://github.com/SebastianVernis/chispart-cli.git
 cd chispart-cli
 ./install.sh
 ```
 
-Después de instalar, solo escribe:
+> ⚠️ Asegúrate de tener Node.js >=18 y tu clave de API de Gemini configurada en `.env`.
+
+---
+
+## 🚀 Ejemplos de Uso
 
 ```bash
-chispart prepara el entorno
-chispart despliega la aplicación
-chispart consulta projectaura sobre optimización de código
+chispart prepara el entorno de desarrollo
+chispart despliega la app en producción
+chispart explica este error: "TypeError: Cannot read property"
+chispart genera un script para respaldar la base de datos
+chispart consulta projectaura sobre mejores prácticas en React
 ```
 
 ---
 
-## 🤖 Comunicación con Gemini + GPT (ProjectAura)
+## 🤖 ProjectAura: El Puente a GPT
 
-Chispart CLI combina **dos niveles de IA**:
+Cuando una consulta requiere **profundidad, creatividad o análisis**, Chispart la delega a **ProjectAura**, que:
 
-1. **Gemini API** – Procesa lenguaje natural, mapea intenciones y gestiona comandos.  
-2. **ProjectAura (GPT)** – Se activa en tareas complejas, generando análisis profundo, soluciones y respuestas enriquecidas.  
+- Envía el contexto a un modelo GPT.
+- Recibe una respuesta enriquecida.
+- La devuelve al usuario o ejecuta acciones.
 
-💡 Esta arquitectura híbrida permite **automatización rápida** para tareas simples y **razonamiento avanzado** para casos complejos.
-
----
-
-## 🧩 Casos de Uso
-
-- Ejecutar tareas del sistema con comandos naturales.  
-- Debug, testing y despliegue con una sola instrucción.  
-- Obtener análisis, sugerencias y asistencia inteligente vía GPT.
+💡 Ideal para debugging, diseño de arquitectura o aprendizaje.
 
 ---
 
-## 📚 Documentación Técnica
+## 📚 Documentación
 
-Consulta el archivo [DOCUMENTATION.md](./DOCUMENTATION.md) para detalles sobre configuración, conexión con Gemini y ProjectAura,  
-así como ejemplos avanzados de integración.
+Consulta la guía completa en:  
+👉 [DOCUMENTATION.md](./DOCUMENTATION.md)
 
 ---
 
-<div align="center">
-  💻 <em>Convierte tu terminal en una experiencia conversacional con IA híbrida.</em><br>
-  ⭐ ¡Instala Chispart CLI y lleva tu productividad a otro nivel! ⭐
-</div>
+## 💬 ¿Quieres contribuir?
+
+¡Tus ideas y código son bienvenidos!  
+Abre un PR o crea un issue. Estamos construyendo el futuro de la interacción con la terminal.
+
+---
+
+<p align="center">
+  💻 <em>Convierte tu terminal en un asistente conversacional con IA híbrida.</em><br>
+  ⭐ ¡Instala Chispart CLI y lleva tu productividad al siguiente nivel!
+</p>
