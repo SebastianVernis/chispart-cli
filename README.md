@@ -146,12 +146,13 @@ Abre un PR o crea un issue. Estamos construyendo el futuro de la interacción co
   ⭐ ¡Instala Chispart CLI y lleva tu productividad al siguiente nivel!
 </p>
 <div align= "center">
-  <a text= "font-segoeui strong"><strong>🔥 Desarrollado por Sebastian Vernis | Soluciones Digitales</strong></a>
+  <a text= "font-segoeui align-center strong">🔥 Desarrollado por Sebastian Vernis | Soluciones Digitales</a>
 </div>
 <div align= "center">
-  <a href="https://sebastianvernis.com">Sebastian Vernis</a>
-    <a> 🧑🏻‍💻 </a>
-  <a href="https://chispart.mx">Chispart</a>
+  <a href="https://sebastianvernis.com">Sebastian Vernis 🧑🏻‍💻 </a>
+</div>
+<div align= "center">
+  <a href="https://chispart.mx">Chispart 🎨 </a>
 </div>
     
 <p align="center">
