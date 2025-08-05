@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Chispart CLI Logo" width="300">
+  <img src="assets/logo.png" alt="Chispart CLI Logo">
 </p>
 
 <h1 align="center">🚀 Chispart CLI – Interfaz Conversacional con IA Híbrida (Gemini + GPT)</h1>
