@@ -154,7 +154,7 @@ Abre un PR o crea un issue. Estamos construyendo el futuro de la interacción co
 <div align= "center">
   <a href="https://chispart.mx">Chispart 🎨 </a>
 </div>
-    
 <p align="center">
-  <img src="assets/Logo.png">
+  <img src="assets/logo.png" alt="Chispart CLI Logo">
 </p>
+
