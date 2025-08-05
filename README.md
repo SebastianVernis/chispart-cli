@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/SebastianVernis/chispart-cli/main/assets/logo.png" alt="Chispart CLI Logo" width="300">
+  <img src="assets/logo.png" alt="Chispart CLI Logo" width="300">
 </p>
 
 <h1 align="center">🚀 Chispart CLI – Interfaz Conversacional con IA Híbrida (Gemini + GPT)</h1>
@@ -144,4 +144,16 @@ Abre un PR o crea un issue. Estamos construyendo el futuro de la interacción co
 <p align="center">
   💻 <em>Convierte tu terminal en un asistente conversacional con IA híbrida.</em><br>
   ⭐ ¡Instala Chispart CLI y lleva tu productividad al siguiente nivel!
+</p>
+<div align= "center">
+  <a text= "font-segoeui strong"><strong>🔥 Desarrollado por Sebastian Vernis | Soluciones Digitales</strong></a>
+</div>
+<div align= "center">
+  <a href="https://sebastianvernis.com">Sebastian Vernis</a>
+    <a> 🧑🏻‍💻 </a>
+  <a href="https://chispart.mx">Chispart</a>
+</div>
+    
+<p align="center">
+  <img src="assets/Logo.png">
 </p>
