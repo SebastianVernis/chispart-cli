@@ -17,6 +17,7 @@
 Chispart CLI convierte tu terminal en un asistente conversacional inteligente:
 
 ```
+mermaid
 Usuario → Chispart CLI → Gemini (detección de intención)
                              ↓
                     ¿Tarea compleja? → Sí → ProjectAura → GPT → Respuesta
